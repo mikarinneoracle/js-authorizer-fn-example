@@ -78,3 +78,14 @@ curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci
 
 <img src="./header-transformations.png" width="800" />
 <p>
+
+Use settings:
+<p>
+Behavior: <b>Overwrite</b>
+<br>
+Header name: <b>username</b>
+<br>
+Values: <b>${request.auth[username]}</b>
+
+
+
