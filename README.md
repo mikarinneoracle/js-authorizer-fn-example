@@ -37,6 +37,13 @@ curl -H "token: test-token" https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.
 </pre>
 Hence the auth context var <code>username</code> gets the value <code>test-token</code>
 
+<p>
+If no <code>token</code> is given in the REST call the function will return <b>401 Unauthorized</b> error e.g. 
+<pre>
+curl https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
+{"code":401,"message":"Unauthorized"}
+</pre>
+
 #### Backend / secondary function fnsimplejs
 <pre>
 const fdk=require('@fnproject/fdk');
