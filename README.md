@@ -62,13 +62,19 @@ curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci
 ["test-token"]
 </pre>
 
-### Create the API Gateway based on the functions
+### Create the API Gateway based on the functions and configure as follows
+
+#### Authorizer function fnauthjs
 
 <img src="./authorizer-function.png" width="800" />
 <p>
  
+#### Backend / secondary function fnauthjs
+
 <img src="./backend-function.png" width="800" />
 <p>
     
+#### <code>username</code> <code>auth context</code> variable transformation to a header
+
 <img src="./header-transformations.png" width="800" />
 <p>
