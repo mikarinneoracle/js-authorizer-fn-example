@@ -31,7 +31,7 @@ fdk.handle(function(input){
 })
 </pre>
 
-The authorizer function will pass on the <code>username</code> in <code>auth context</code> as a custom variable. The value for it is set from REST call input as <code>token</code> i.e.
+The authorizer function will pass on the <code>username</code> in <code>auth context</code> as a custom variable. The value for it is set from REST call input as <code>token</code> on the <a href="https://github.com/mikarinneoracle/js-authorizer-fn-example/blob/master/fnauthjs/func.js#L14">line 14 </a> i.e.
 <pre>
 curl -H "token: test-token" https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
 </pre>
