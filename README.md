@@ -80,7 +80,7 @@ Token header name: <b>token</b>
 <img src="./backend-function.png" width="800" />
 <p>
     
-### <i>auth context</i> variable <i>username</i> transformation to a header in <i>Route Request Policies</i>
+### <i>auth context</i> variable <i>username</i> transformation in <i>Route Request Policies</i>
 
 <img src="./header-transformations.png" width="800" />
 <p>
