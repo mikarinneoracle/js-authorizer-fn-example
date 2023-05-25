@@ -69,7 +69,7 @@ curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci
 <img src="./authorizer-function.png" width="800" />
 <p>
  
-#### Backend / secondary function fnauthjs
+#### Backend / secondary function fnsimplejs
 
 <img src="./backend-function.png" width="800" />
 <p>
