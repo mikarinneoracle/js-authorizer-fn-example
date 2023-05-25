@@ -1,8 +1,8 @@
 # API Gateway authorizer function context var example
 
-### Build and deploy the functions
+## Build and deploy the functions
 
-#### Authorizer function fnauthjs
+### Authorizer function fnauthjs
 <pre>
 const fdk=require('@fnproject/fdk');
 
@@ -44,7 +44,7 @@ curl https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
 {"code":401,"message":"Unauthorized"}
 </pre>
 
-#### Backend / secondary function fnsimplejs
+### Backend / secondary function fnsimplejs
 <pre>
 const fdk=require('@fnproject/fdk');
 
@@ -62,9 +62,9 @@ curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci
 ["test-token"]
 </pre>
 
-### Create the API Gateway based on the functions and configure as follows
+## Create the API Gateway based on the functions and configure as follows
 
-#### Authorizer function fnauthjs
+### Authorizer function fnauthjs
 
 <img src="./authorizer-function.png" width="800" />
 <p>
@@ -75,12 +75,12 @@ Token location: <b>Header</b>
 <br>
 Token header name: <b>token</b>
  
-#### Backend / secondary function fnsimplejs
+### Backend / secondary function fnsimplejs
 
 <img src="./backend-function.png" width="800" />
 <p>
     
-#### <i>auth context</i> variable <i>username</i> transformation to a header
+### <i>auth context</i> variable <i>username</i> transformation to a header
 
 <img src="./header-transformations.png" width="800" />
 <p>
