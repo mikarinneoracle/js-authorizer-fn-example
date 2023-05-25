@@ -55,7 +55,7 @@ fdk.handle(function(input, ctx){
 
 The secondary / backend function will get the authorizer passed variable <code>username</code>
 as a transformed header variable as <code>Fn-Http-H-Username</code> and will print it out as the
-function REST call result i.e.
+function REST call result on the <a href="https://github.com/mikarinneoracle/js-authorizer-fn-example/blob/master/fnsimplejs/func.js#L4">line 4</a> i.e.
 
 <pre>
 curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
