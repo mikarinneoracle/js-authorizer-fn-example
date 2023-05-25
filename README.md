@@ -2,7 +2,7 @@
 
 ### Build and deploy the functions
 
-#### fnauthjs
+#### Authorizer function fnauthjs
 <pre>
 const fdk=require('@fnproject/fdk');
 
@@ -37,7 +37,7 @@ curl -H "token: test-token" https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.
 </pre>
 Hence the auth context var <code>username</code> gets the value <code>test-token</code>
 
-#### fnsimples
+#### Backend / secondary function fnsimplejs
 <pre>
 const fdk=require('@fnproject/fdk');
 
