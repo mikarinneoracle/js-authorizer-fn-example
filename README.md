@@ -73,13 +73,19 @@ curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci
 
 <img src="./backend-function.png" width="800" />
 <p>
+ 
+Use these settings for the <b><i>Single argument authorizer function</i></b>:
+<p>
+Token location: <b>Header</b>
+<br>
+Token header name: <b>token</b>
     
 #### <i>auth context</i> variable <i>username</i> transformation to a header
 
 <img src="./header-transformations.png" width="800" />
 <p>
 
-Use settings:
+Use these settings for the <b><i>Header transformations</i></b>:
 <p>
 Behavior: <b>Overwrite</b>
 <br>
