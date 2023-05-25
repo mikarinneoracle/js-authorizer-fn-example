@@ -33,7 +33,7 @@ fdk.handle(function(input){
 
 The authorizer function will pass on the <code>username</code> in <code>auth context</code> as a custom variable. The value for it is set from REST call input as <code>token</code> i.e.
 <pre>
-curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
+curl -H "token: test-token" https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
 </pre>
 <code>username</code> gets value <code>test-token</code>
 
