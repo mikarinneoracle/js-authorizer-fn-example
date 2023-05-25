@@ -1,7 +1,9 @@
-## Build and deploy the functions
+# API Gateway authorizer function context var example
 
-### fnauthjs
-<code>
+### Build and deploy the functions
+
+#### fnauthjs
+<pre>
 const fdk=require('@fnproject/fdk');
 
 fdk.handle(function(input){
@@ -25,21 +27,35 @@ fdk.handle(function(input){
         "wwwAuthenticate": "Bearer realm=\"www.com\""
       }
   }
-  console.log("AUTH input token " + input.token);
   return json;
 })
-</code>
+</pre>
 
-### fnauthjs
-<code>
+The authorizer function will pass on the <code>username</code> in <code>auth context<code> as a custom variable. The value for it is set from REST call input as <code>token</code> i.e.
+<pre>
+curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
+</pre>
+<code>username</code> gets value <code>test-token</code>
+
+#### fnsimples
+<pre>
 const fdk=require('@fnproject/fdk');
 
 fdk.handle(function(input, ctx){
   return ctx.headers['Fn-Http-H-Username'];
 })    
-</code>
+</pre>
 
-## Create the API Gateway based on the functions
+The secondary / backend function will get the authorizer passed variable <code>username</code>
+as a transformed header variable as <code>Fn-Http-H-Username</code> and will print it out as the
+function REST call result i.e.
+
+<pre>
+curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
+["test-token"]
+</pre>
+
+### Create the API Gateway based on the functions
 
 <img src="./authorizer-function.png" width="800" />
 <p>

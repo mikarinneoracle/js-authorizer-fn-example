@@ -21,6 +21,5 @@ fdk.handle(function(input){
         "wwwAuthenticate": "Bearer realm=\"www.com\""
       }
   }
-  console.log("AUTH input token " + input.token);
   return json;
 })
