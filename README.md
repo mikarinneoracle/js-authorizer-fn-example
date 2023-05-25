@@ -74,7 +74,7 @@ curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci
 <img src="./backend-function.png" width="800" />
 <p>
     
-#### <code>username</code> <code>auth context</code> variable transformation to a header
+#### <b>auth context</b> variable <b>username</b> transformation to a header
 
 <img src="./header-transformations.png" width="800" />
 <p>
