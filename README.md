@@ -35,7 +35,7 @@ The authorizer function will pass on the <code>username</code> in <code>auth con
 <pre>
 curl -H "token: test-token" https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
 </pre>
-<code>username</code> gets value <code>test-token</code>
+Hence the auth context var <code>username</code> gets the value <code>test-token</code>
 
 #### fnsimples
 <pre>
