@@ -68,17 +68,17 @@ curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci
 
 <img src="./authorizer-function.png" width="800" />
 <p>
- 
-#### Backend / secondary function fnsimplejs
-
-<img src="./backend-function.png" width="800" />
-<p>
- 
+    
 Use these settings for the <b><i>Single argument authorizer function</i></b>:
 <p>
 Token location: <b>Header</b>
 <br>
 Token header name: <b>token</b>
+ 
+#### Backend / secondary function fnsimplejs
+
+<img src="./backend-function.png" width="800" />
+<p>
     
 #### <i>auth context</i> variable <i>username</i> transformation to a header
 
