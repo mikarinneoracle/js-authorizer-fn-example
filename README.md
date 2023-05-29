@@ -86,7 +86,7 @@ Header name: <b>username</b>
 <br>
 Values: <b>${request.auth[username]}</b>
 
-### Authorization error 401 Unauthorized
+## Authorization error 401 Unauthorized
 
 <p>
 If no <code>token</code> is given in the API Gateway REST call the function will the secondary/backend functionn will not be called and will return <b>401 Unauthorized</b> error instead e.g. 
