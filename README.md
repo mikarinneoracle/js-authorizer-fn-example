@@ -31,7 +31,9 @@ fdk.handle(function(input){
 })
 </pre>
 
-The authorizer function will pass on the <code>username</code> in <code>auth context</code> as a custom variable. The value for it is set from REST call input as <code>token</code> on the <a href="https://github.com/mikarinneoracle/js-authorizer-fn-example/blob/master/fnauthjs/func.js#L14">line 14 </a> i.e.
+The authorizer function will pass on the <code>username</code> in <code>auth context</code> as a custom variable. The value for it is set from REST call input as <code>token</code> on the <a href="https://github.com/mikarinneoracle/js-authorizer-fn-example/blob/master/fnauthjs/func.js#L14">line 14 </a>.
+<br>
+Here's the call using API Gateway:
 <pre>
 curl -H "token: test-token" https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
 </pre>
@@ -48,14 +50,17 @@ fdk.handle(function(input, ctx){
 
 The secondary / backend function will get the authorizer passed variable <code>username</code>
 as a transformed header variable <code>Fn-Http-H-Username</code> and will print it out as the
-function REST call result on the <a href="https://github.com/mikarinneoracle/js-authorizer-fn-example/blob/master/fnsimplejs/func.js#L4">line 4</a> i.e.
-
+function REST call result on the <a href="https://github.com/mikarinneoracle/js-authorizer-fn-example/blob/master/fnsimplejs/func.js#L4">line 4</a>.
+<br>
+Here's the call using API Gateway:
 <pre>
 curl -H "token: test-token"  https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
 ["test-token"]
 </pre>
 
 ## Create the API Gateway based on the functions and configure as follows
+
+To achieve this as described above create and configure API Gateway deployment as follows:
 
 ### Authorizer function fnauthjs
 
