@@ -38,7 +38,7 @@ curl -H "token: test-token" https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.
 Hence the auth context var <code>username</code> gets the value <code>test-token</code>
 
 <p>
-If no <code>token</code> is given in the API Gateway REST call the function will return <b>401 Unauthorized</b> error e.g. 
+If no <code>token</code> is given in the API Gateway REST call the function will the secondary/backend functionn will not be calles and will return <b>401 Unauthorized</b> error instead e.g. 
 <pre>
 curl https://drp....56kvgu.apigateway.eu-amsterdam-1.oci.customer-oci.com/
 {"code":401,"message":"Unauthorized"}
